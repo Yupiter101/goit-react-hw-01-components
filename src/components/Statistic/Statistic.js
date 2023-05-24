@@ -1,7 +1,6 @@
 import css from "./Statistic.module.css";
 import {randomColor} from '../../utils/makeColor';
-// console.log(randomColor(-5, 1000));
-// console.log(randomColor());
+
 
 
 
