@@ -1,9 +1,11 @@
 import { Profile } from "./Profile/Profile";
 import { Statistic } from "./Statistic/Statistic";
 import { FriendList } from "./FriendList/FriendList";
+import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 import user from "../Data/user.json";
 import data from "../Data/data.json";
 import friends from "../Data/friends.json";
+import transactions from '../Data/transactions.json';
 
 // console.log(data);
 
@@ -21,6 +23,8 @@ export const App = () => {
       <Statistic title={"Upload stats3"} stats={data}/>
 
       <FriendList friends={friends}></FriendList>
+
+      <TransactionHistory items={transactions}/>
       
     </div>
   );
@@ -30,12 +34,11 @@ export const App = () => {
 
 
 // {
-//   "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998749.png",
-//   "name": "Poly",
-//   "isOnline": false,
-//   "id": 1284
+//   "id": "1e0700a2-5183-4291-85cc-2065a036a683",
+//   "type": "invoice",
+//   "amount": "964.82",
+//   "currency": "LRD"
 // }
-
 
 
 

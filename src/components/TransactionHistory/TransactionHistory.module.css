@@ -1,0 +1,40 @@
+
+
+.transactionHistory {
+  outline: 1px solid #aaa;
+  width: 660px;
+  margin: 0 auto 30px;
+  /* background-color: yellow; */
+}
+
+tr {
+  outline: 1px solid #ccc;
+  /* background-color: red; */
+}
+
+th {
+  width: calc(100% / 3);
+  /* border: 1px solid green; */
+  background-color: rgb(50, 91, 167);
+  color: #DDD;
+  text-transform: uppercase;
+  padding: 16px;
+      /* background-color: yellow; */
+}
+
+td {
+  padding: 10px 10px 10px 82px;
+  
+  outline: 1px solid #aaa;
+      /* background-color: yellow; */
+  /* border-color: blue; */
+}
+
+tbody tr:nth-child(2n) {
+  background-color: #eee;
+}
+
+tbody tr:hover {
+  background-color: rgb(200, 255, 255);
+
+}
