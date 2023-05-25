@@ -1,7 +1,9 @@
 import { Profile } from "./Profile/Profile";
 import { Statistic } from "./Statistic/Statistic";
+import { FriendList } from "./FriendList/FriendList";
 import user from "../Data/user.json";
 import data from "../Data/data.json";
+import friends from "../Data/friends.json";
 
 // console.log(data);
 
@@ -17,6 +19,8 @@ export const App = () => {
       />
 
       <Statistic title={"Upload stats3"} stats={data}/>
+
+      <FriendList friends={friends}></FriendList>
       
     </div>
   );
@@ -25,13 +29,12 @@ export const App = () => {
 
 
 
-// [
-//   { "id": "id-1", "label": ".docx", "percentage": 22 },
-//   { "id": "id-2", "label": ".pdf", "percentage": 4 },
-//   { "id": "id-3", "label": ".mp3", "percentage": 17 },
-//   { "id": "id-4", "label": ".psd", "percentage": 47 },
-//   { "id": "id-5", "label": ".pdf", "percentage": 10 }
-// ]
+// {
+//   "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998749.png",
+//   "name": "Poly",
+//   "isOnline": false,
+//   "id": 1284
+// }
 
 
 

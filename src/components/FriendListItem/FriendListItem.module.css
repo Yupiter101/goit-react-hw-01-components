@@ -1,0 +1,37 @@
+
+
+.item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  height: 100px;
+  box-shadow: 6px 6px 8px -5px rgba(0, 0, 0, 0.3);
+
+}
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.status {
+  width: 24px;
+  height: 24px;
+  background-color: red;
+  border-radius: 45%;
+  margin: 16px;
+}
+.status.online {
+  background-color: green;
+}
+
+.avatar {
+  background-color: aquamarine;
+  height: 80%;
+  width: auto;
+  border-radius: 6px;
+}
+
+.name {
+  font-size: 26px;
+  font-weight: 600;
+  margin-left: 16px;
+}
