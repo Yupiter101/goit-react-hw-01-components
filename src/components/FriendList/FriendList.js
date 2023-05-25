@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 import css from './FriendList.module.css';
 import {FriendListItem} from '../FriendListItem/FriendListItem';
 
@@ -18,5 +18,13 @@ export function FriendList({friends}) {
       
     </ul>
     
+  )
+}
+
+
+FriendList.propTypes = {
+  friend: PropTypes.arrayOf(PropTypes.exact({
+    id: PropTypes.string.isRequired,
+  })
   )
 }

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from "./Statistic.module.css";
 import {randomColor} from '../../utils/makeColor';
 
@@ -13,7 +14,7 @@ export function Statistic({title, stats}) {
 
         {stats.map( stat => {
           return (
-            <li key={stat.id} className={css.item} style={{backgroundColor: randomColor(30, 180)}} >
+            <li key={stat.id} className={css.item} style={{backgroundColor: randomColor(30, 220)}} >
               <span className={css.label}>{stat.label}</span>
               <span className={css.percentage}>{stat.percentage}%</span>
             </li>
@@ -25,4 +26,11 @@ export function Statistic({title, stats}) {
   )
 }
 
-
+Statistic.propTypes = {
+  stats: PropTypes.arrayOf(PropTypes.exact({
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired
+  })
+  )
+}

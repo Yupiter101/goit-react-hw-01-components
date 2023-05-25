@@ -8,8 +8,8 @@
   margin-right:auto;
   display: flex;
   flex-direction: column;
-  border: 2px solid green;
-  color: #ddd;
+  border: 1px solid #ccc;
+  color: #eee;
  
 }
 
