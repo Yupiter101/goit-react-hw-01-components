@@ -4,11 +4,14 @@ import {randomColor} from '../../utils/makeColor';
 
 
 export function FriendListItem({avatar, name, isOnline}) {
-  const classNames = [css.status, isOnline && css.online];
+  // const colorClassName = [css.status, colorOnline];
+  const colorClassName = `${css.status} ${isOnline ? css.green : css.red}`;
+ 
   return (
     <li className={css.item}>
-      <span className={classNames.join(" ")}></span>
-      <img className={css.avatar} src={avatar} alt="User avatar" width={48} style={{backgroundColor: randomColor(180, 255)}} />
+      {/* <span className={classNames.join(" ")}></span> */}
+      <span className={colorClassName}></span>
+      <img className={css.avatar} src={avatar} alt="User avatar" width={48} style={{backgroundColor: randomColor()}} />
       <p className={css.name}>{name}</p>
     </li>
   )

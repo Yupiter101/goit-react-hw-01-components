@@ -15,12 +15,17 @@
 .status {
   width: 24px;
   height: 24px;
-  background-color: red;
+  /* background-color: red; */
   border-radius: 45%;
   margin: 16px;
 }
-.status.online {
+
+.status.green {
   background-color: green;
+}
+
+.status.red {
+  background-color: red;
 }
 
 .avatar {
