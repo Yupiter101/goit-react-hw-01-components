@@ -15,7 +15,7 @@ export function TransactionHistory({items}) {
 
       <tbody>
         {items.map(item => {
-          // const amount =  Number(item.amount);
+
           return (
             <tr key={item.id}>
               <td>{item.type}</td>
